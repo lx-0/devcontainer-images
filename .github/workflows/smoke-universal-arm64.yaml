@@ -8,7 +8,7 @@ on:
   pull_request:
     paths:
       - src/universal-arm64/**
-      - .github/universal-arm64/smoke-universal-arm64.yaml
+      - .github/workflows/smoke-universal-arm64.yaml
       - .github/actions/**
       - build/**
 jobs:
