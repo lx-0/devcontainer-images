@@ -1,4 +1,4 @@
-name: Smoke test "universal" build
+name: Smoke test "universal-arm64" build
 
 on: 
   workflow_dispatch:
@@ -7,8 +7,8 @@ on:
     - main
   pull_request:
     paths:
-      - src/universal/**
-      - .github/universal/smoke-universal.yaml
+      - src/universal-arm64/**
+      - .github/universal-arm64/smoke-universal-arm64.yaml
       - .github/actions/**
       - build/**
 jobs:
@@ -25,5 +25,5 @@ jobs:
       id: smoke_test
       uses: ./.github/actions/smoke-test
       with:
-        image: universal
+        image: universal-arm64
         threshold: 10
