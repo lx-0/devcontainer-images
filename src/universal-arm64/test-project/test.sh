@@ -168,6 +168,7 @@ check "oryx-build-python-result" python3 ./sample/python/src/solve.py
 
 ls -la /home/codespace
 ls -la /home/codespace/.dotnet
+ls -la /usr/share/dotnet
 
 # Install platforms with oryx build tool
 check "oryx-install-dotnet-2.1" oryx prep --skip-detection --platforms-and-versions dotnet=2.1.30
