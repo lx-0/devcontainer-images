@@ -65,6 +65,8 @@ chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
 chmod g+r+w+s /usr/share/dotnet
 chmod -R g+r+w /usr/share/dotnet
 
+echo ">>>>> SCRIPT DOES CREATE FOLDERS <<<<<"
+
 ln -snf /usr/share/dotnet $DOTNET_PATH
 mkdir -p /opt/dotnet/lts
 cp -R /usr/share/dotnet/dotnet /opt/dotnet/lts
