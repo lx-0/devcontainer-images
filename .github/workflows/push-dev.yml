@@ -68,7 +68,7 @@ jobs:
   image-info:
     name: Trigger info extraction
     needs: [build-and-push]
-    uses: devcontainers/images/.github/workflows/version-history.yml@main
+    uses: lx-0/devcontainer-images/.github/workflows/version-history.yml@main
     permissions:
       contents: write
       pull-requests: write

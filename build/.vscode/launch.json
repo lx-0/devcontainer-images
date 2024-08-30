@@ -16,7 +16,7 @@
 				"--page", "1",
 				"--page-total", "1",
 				"--release", "v0.0.1",
-				"--github-repo", "devcontainers/images",
+				"--github-repo", "lx-0/devcontainer-images",
 				"--registry", "clantz.azurecr.io",
 				"--registryPath", "devcontainers",
 				"--stubRegistry", "clantz.azurecr.io",
@@ -37,7 +37,7 @@
 				"--overwrite",
 				"--prune",
 				"--release", "main",
-				"--github-repo", "devcontainers/images",
+				"--github-repo", "lx-0/devcontainer-images",
 				"--registry", "mcr.microsoft.com",
 				"--registryPath", "devcontainers"
 			]
@@ -51,7 +51,7 @@
 			"args": [
 				"update-script-sources",
 				"v0.100.0",
-				"--github-repo", "devcontainers/images"
+				"--github-repo", "lx-0/devcontainer-images"
 			]
 		},
 		{

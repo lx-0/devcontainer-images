@@ -3,7 +3,7 @@ inputs:
   image:
     description: 'Image to test'
     required: true
-    default: 'base-debian'
+    default: 'universal-arm64'
   threshold:
     description: 'Threshold (in GB) to validate that the image size does not exceed this limit'
     required: false
