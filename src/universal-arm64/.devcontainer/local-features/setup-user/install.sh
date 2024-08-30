@@ -63,6 +63,8 @@ DOTNET_PATH="/home/${USERNAME}/.dotnet"
 # FIX begin
 echo ">>> DOTNET PERMISSIONS <<<"
 ls -al /usr/share/dotnet
+echo "/opt/dotnet"
+ls -al /opt/dotnet
 id ${USERNAME}
 # FIX end
 
@@ -80,6 +82,8 @@ cp -R /usr/share/dotnet/ThirdPartyNotices.txt /opt/dotnet/lts
 # FIX begin
 echo ">>> DOTNET PERMISSIONS <<<"
 ls -al /usr/share/dotnet
+echo "/opt/dotnet"
+ls -al /opt/dotnet
 id ${USERNAME}
 # FIX end
 
