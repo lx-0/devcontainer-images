@@ -60,6 +60,12 @@ ln -snf /usr/local/rvm/rubies/default $RUBY_PATH
 
 DOTNET_PATH="/home/${USERNAME}/.dotnet"
 
+# FIX begin
+echo ">>> DOTNET PERMISSIONS <<<"
+ls -al /usr/share/dotnet
+id ${USERNAME}
+# FIX end
+
 # Required due to https://github.com/devcontainers/features/pull/628/files#r1276659825
 chown -R "${USERNAME}:${USERNAME}" /usr/share/dotnet
 chmod g+r+w+s /usr/share/dotnet
@@ -71,9 +77,11 @@ cp -R /usr/share/dotnet/dotnet /opt/dotnet/lts
 cp -R /usr/share/dotnet/LICENSE.txt /opt/dotnet/lts
 cp -R /usr/share/dotnet/ThirdPartyNotices.txt /opt/dotnet/lts
 
+# FIX begin
 echo ">>> DOTNET PERMISSIONS <<<"
 ls -al /usr/share/dotnet
 id ${USERNAME}
+# FIX end
 
 MAVEN_PATH="/home/${USERNAME}/.maven/current"
 mkdir -p /home/${USERNAME}/.maven
