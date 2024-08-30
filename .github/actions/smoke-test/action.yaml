@@ -16,7 +16,7 @@ runs:
       id: checkout_release
       uses: actions/checkout@v3
       with:
-        repository: 'devcontainers/images'
+        repository: 'lx-0/devcontainer-images'
         path: '__build'
         ref: 'main'
 
