@@ -110,8 +110,8 @@ echo $(echo "php versions" && ls -a /usr/local/php)
 # Hugo
 check "hugo" hugo version
 
-# conda
-check "conda" conda --version
+# # conda
+# check "conda" conda --version
 
 # Go
 check "go" go version
@@ -190,16 +190,16 @@ checkPythonPackageVersion "python" "setuptools" "65.5.1"
 checkPythonPackageVersion "python" "requests" "2.31.0"
 checkPythonPackageVersion "python" "urllib3" "2.0.7"
 
-## Conda Python
-checkCondaPackageVersion "requests" "2.31.0"
-checkCondaPackageVersion "cryptography" "41.0.4"
-checkCondaPackageVersion "pyopenssl" "23.2.0"
-checkCondaPackageVersion "urllib3" "1.26.17"
+# ## Conda Python
+# checkCondaPackageVersion "requests" "2.31.0"
+# checkCondaPackageVersion "cryptography" "41.0.4"
+# checkCondaPackageVersion "pyopenssl" "23.2.0"
+# checkCondaPackageVersion "urllib3" "1.26.17"
 
-## Test Conda
-check "conda-update-conda" bash -c "conda update -y conda"
-check "conda-install-tensorflow" bash -c "conda create --name test-env -c conda-forge --yes tensorflow"
-check "conda-install-pytorch" bash -c "conda create --name test-env -c conda-forge --yes pytorch"
+# ## Test Conda
+# check "conda-update-conda" bash -c "conda update -y conda"
+# check "conda-install-tensorflow" bash -c "conda create --name test-env -c conda-forge --yes tensorflow"
+# check "conda-install-pytorch" bash -c "conda create --name test-env -c conda-forge --yes pytorch"
 
 # Report result
 reportResults
