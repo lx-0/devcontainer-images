@@ -166,8 +166,11 @@ check "oryx-build-python-result" python3 ./sample/python/src/solve.py
 
 # Test patches
 
+echo "ls -la /home/codespace"
 ls -la /home/codespace
+echo "ls -la /home/codespace/.dotnet"
 ls -la /home/codespace/.dotnet
+echo "ls -la /usr/share/dotnet"
 ls -la /usr/share/dotnet
 
 # Install platforms with oryx build tool
