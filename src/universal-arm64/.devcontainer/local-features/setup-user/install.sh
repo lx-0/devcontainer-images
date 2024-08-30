@@ -71,6 +71,10 @@ cp -R /usr/share/dotnet/dotnet /opt/dotnet/lts
 cp -R /usr/share/dotnet/LICENSE.txt /opt/dotnet/lts
 cp -R /usr/share/dotnet/ThirdPartyNotices.txt /opt/dotnet/lts
 
+echo ">>> DOTNET PERMISSIONS <<<"
+ls -al /usr/share/dotnet
+id ${USERNAME}
+
 MAVEN_PATH="/home/${USERNAME}/.maven/current"
 mkdir -p /home/${USERNAME}/.maven
 ln -snf /usr/local/sdkman/candidates/maven/current $MAVEN_PATH
