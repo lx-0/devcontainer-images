@@ -5,7 +5,7 @@ inputs:
     required: true
     default: 'base-debian'
   threshold:
-    description: 'Threshold (in GB) to validate that the image size does not excced this limit'
+    description: 'Threshold (in GB) to validate that the image size does not exceed this limit'
     required: false
     default: 14
 

@@ -21,7 +21,7 @@
 	],
 
 	"needsDedicatedPage": [ 
-		"universal",
+		"universal-arm64",
 		"php",
 		"python"
 	],

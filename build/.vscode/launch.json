@@ -30,7 +30,7 @@
 			"program": "${workspaceFolder}/vscdc",
 			"args": [
 				"info",
-				"universal",
+				"universal-arm64",
 				"--no-build",
 				"--markdown",
 				"--cg",

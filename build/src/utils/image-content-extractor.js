@@ -280,7 +280,7 @@ async function getPipPackageInfo(imageTagOrContainerName, packageList, usePipx, 
 }
 
 function getUserName(imageId) {
-    return imageId === "universal" ? "codespace" : undefined;
+    return imageId === "universal-arm64" ? "codespace" : undefined;
 }
 
 async function getPipVersionLookup(imageTagOrContainerName, imageId) {

@@ -14,9 +14,9 @@ devcontainer exec --workspace-folder $(pwd)/src/$IMAGE  --id-label ${id_label} /
 
 echo "(*) Docker image details..."
 docker images
-# Checking size of universal image
 
-if [ $IMAGE == "universal" ]; then
+# Checking size of universal-arm64 image
+if [ $IMAGE == "universal-arm64" ]; then
     check_image_size $IMAGE $THRESHOLD_IN_GB
 fi
 
